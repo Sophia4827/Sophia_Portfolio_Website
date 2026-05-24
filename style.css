@@ -61,10 +61,11 @@ nav {
 /* HERO */
 .hero {
   min-height: 100vh;
-  display: flex; align-items: center;
+  display: flex; align-items: center; justify-content: space-between;
   padding: 80px 10% 60px;
   position: relative;
   overflow: hidden;
+  gap: 60px;
 }
 .hero-bg {
   position: absolute; inset: 0;
@@ -72,7 +73,21 @@ nav {
               radial-gradient(ellipse 40% 40% at 15% 80%, var(--accent-light) 0%, transparent 60%);
   pointer-events: none;
 }
-.hero-content { position: relative; max-width: 620px; }
+.hero-content { position: relative; max-width: 540px; order: 1; }
+.hero-photo {
+  flex-shrink: 0;
+  width: 300px; height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  order: 2;
+  position: relative; z-index: 1;
+  box-shadow: 0 24px 60px rgba(61,43,31,0.13);
+}
+.hero-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
 .hero-eyebrow {
   font-size: 12px; font-weight: 500; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--accent);
@@ -322,6 +337,9 @@ footer {
   .nav-links { display: none; }
   section { padding: 70px 6%; }
   .divider { margin: 0 6%; }
+  .hero { flex-direction: column; justify-content: center; padding-top: 100px; gap: 32px; }
+  .hero-photo { order: 1; width: 180px; height: 220px; }
+  .hero-content { order: 2; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .exp-item { grid-template-columns: 1fr; gap: 8px; }
   .exp-meta { display: flex; gap: 16px; align-items: baseline; }
