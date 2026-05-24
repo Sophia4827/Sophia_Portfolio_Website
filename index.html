@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sophia Huang — Data Scientist & Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <span class="nav-name">Sophia Huang</span>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Data Scientist & Analyst</div>
+    <h1>Hi, I'm<br><em>Sophia Huang</em></h1>
+    <p class="hero-desc">MS Data Analytics candidate at Binghamton University, building machine learning pipelines, analytical dashboards, and data-driven solutions across healthcare, transportation, and beyond.</p>
+    <div class="hero-chips">
+      <span class="chip">Python · R · SQL</span>
+      <span class="chip">Machine Learning</span>
+      <span class="chip">Computer Vision</span>
+      <span class="chip">Data Visualization</span>
+      <span class="chip">Fluent Mandarin</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">Selected Work</div>
+  <div class="section-title">Projects</div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+    <button class="filter-btn" onclick="filterProjects('ml', this)">Machine Learning</button>
+    <button class="filter-btn" onclick="filterProjects('analytics', this)">Analytics</button>
+    <button class="filter-btn" onclick="filterProjects('dev', this)">Development</button>
+  </div>
+
+  <div class="projects-grid" id="projects-grid">
+
+    <div class="project-card" data-tags="ml">
+      <div class="card-top">
+        <div class="card-icon" style="background:#F2E8DE; font-size:22px;">🅿️</div>
+        <span class="card-date">Jan – May 2026</span>
+      </div>
+      <div class="card-title">Campus Parking Availability Detection</div>
+      <div class="card-desc">Built a computer vision pipeline using YOLO to detect parking occupancy from lot images, achieving 90% precision and 93% recall on a 6,000+ image test set of 255,000+ labeled spaces.</div>
+      <div class="card-tags">
+        <span class="tag ml">Computer Vision</span>
+        <span class="tag ml">YOLO</span>
+        <span class="tag dev">Figma</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="ml analytics">
+      <div class="card-top">
+        <div class="card-icon" style="background:#E8EDE8; font-size:22px;">🏥</div>
+        <span class="card-date">Jan – May 2026</span>
+      </div>
+      <div class="card-title">UHS 30-Day Hospital Readmission Analysis</div>
+      <div class="card-desc">Analyzed 5,289 inpatient hospitalizations from Epic EHR data. Applied inverse probability weighting and logistic regression to evaluate care transition interventions — finding TCM within 7 days reduced readmission by 7.8 percentage points.</div>
+      <div class="card-tags">
+        <span class="tag analytics">Causal Inference</span>
+        <span class="tag ml">K-Modes</span>
+        <span class="tag analytics">EHR Data</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="ml">
+      <div class="card-top">
+        <div class="card-icon" style="background:#DDE8EE; font-size:22px;">🚨</div>
+        <span class="card-date">Aug – Dec 2025</span>
+      </div>
+      <div class="card-title">Emergency Vehicle Sound Analysis</div>
+      <div class="card-desc">Created an audio ML pipeline with a CNN model to classify emergency vehicle sirens, achieving 99% accuracy through fine-tuning with fastai and PyTorch.</div>
+      <div class="card-tags">
+        <span class="tag ml">CNN</span>
+        <span class="tag ml">PyTorch</span>
+        <span class="tag ml">fastai</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="analytics dev">
+      <div class="card-top">
+        <div class="card-icon" style="background:#F2E8DE; font-size:22px;">✈️</div>
+        <span class="card-date">Aug – Dec 2025</span>
+      </div>
+      <div class="card-title">JetBlue Delay Analysis</div>
+      <div class="card-desc">Designed a relational database to analyze JetBlue delay drivers. Drafted ER diagrams, implemented the schema in SQL with 6 entities, and visualized the database architecture in Microsoft Visio.</div>
+      <div class="card-tags">
+        <span class="tag dev">SQL</span>
+        <span class="tag analytics">Database Design</span>
+        <span class="tag dev">Visio</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="analytics">
+      <div class="card-top">
+        <div class="card-icon" style="background:#E8EDE8; font-size:22px;">📊</div>
+        <span class="card-date">Jan – May 2025</span>
+      </div>
+      <div class="card-title">BOCES Service Ticket Analysis</div>
+      <div class="card-desc">Led a team analyzing 10,000+ IT service tickets for two school districts. Designed 7 Power BI interactive visualizations and diagnosed systemic inefficiencies including misrouted tickets and staffing gaps.</div>
+      <div class="card-tags">
+        <span class="tag analytics">Power BI</span>
+        <span class="tag analytics">Operations</span>
+        <span class="tag analytics">Team Lead</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="analytics dev">
+      <div class="card-top">
+        <div class="card-icon" style="background:#DDE8EE; font-size:22px;">🗺️</div>
+        <span class="card-date">Apr – May 2025</span>
+      </div>
+      <div class="card-title">NYC 311 Service Request Analysis</div>
+      <div class="card-desc">Built an interactive Shiny web app analyzing spatial and temporal patterns in NYC 311 complaints. Designed the Response Times tab to surface geographic disparities across neighborhoods using sf, ggplot2, and leaflet.</div>
+      <div class="card-tags">
+        <span class="tag dev">Shiny</span>
+        <span class="tag analytics">Geospatial</span>
+        <span class="tag dev">R</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="ml">
+      <div class="card-top">
+        <div class="card-icon" style="background:#F2E8DE; font-size:22px;">🦴</div>
+        <span class="card-date">Nov – Dec 2024</span>
+      </div>
+      <div class="card-title">Bone Fracture Image Classification</div>
+      <div class="card-desc">Developed a YOLO-based image classification pipeline for X-ray fracture detection. Applied transfer learning, data augmentation, and domain expert validation to achieve 84% precision.</div>
+      <div class="card-tags">
+        <span class="tag ml">YOLO</span>
+        <span class="tag ml">Transfer Learning</span>
+        <span class="tag analytics">Healthcare AI</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-tags="analytics ml">
+      <div class="card-top">
+        <div class="card-icon" style="background:#E8EDE8; font-size:22px;">⚡</div>
+        <span class="card-date">Nov – Dec 2024</span>
+      </div>
+      <div class="card-title">Energy Data Analysis</div>
+      <div class="card-desc">Analyzed energy efficiency data using Python to identify key drivers of consumption. Built decision tree and UMAP models, applied logistic regression, and visualized findings with Seaborn and Matplotlib.</div>
+      <div class="card-tags">
+        <span class="tag ml">Decision Trees</span>
+        <span class="tag ml">UMAP</span>
+        <span class="tag analytics">Python</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">Capabilities</div>
+  <div class="section-title">Skills & Tools</div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Programming</div>
+      <div class="skill-list">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">R</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">Shell Scripting</span>
+        <span class="skill-pill">MongoDB</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">ML & Data Science</div>
+      <div class="skill-list">
+        <span class="skill-pill">PyTorch</span>
+        <span class="skill-pill">fastai</span>
+        <span class="skill-pill">Scikit-learn</span>
+        <span class="skill-pill">YOLO</span>
+        <span class="skill-pill">Pandas</span>
+        <span class="skill-pill">NumPy</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Visualization</div>
+      <div class="skill-list">
+        <span class="skill-pill">Tableau</span>
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">Shiny</span>
+        <span class="skill-pill">Matplotlib</span>
+        <span class="skill-pill">Seaborn</span>
+        <span class="skill-pill">ggplot2</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Cloud & Systems</div>
+      <div class="skill-list">
+        <span class="skill-pill">AWS</span>
+        <span class="skill-pill">Redshift</span>
+        <span class="skill-pill">Neo4j</span>
+        <span class="skill-pill">Figma</span>
+        <span class="skill-pill">Jupyter</span>
+        <span class="skill-pill">VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Background</div>
+  <div class="section-title">Experience</div>
+  <div class="exp-list">
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-org">Binghamton University</div>
+        <div class="exp-dates">Oct 2025 – Present</div>
+      </div>
+      <div>
+        <div class="exp-role">Research Data Scientist</div>
+        <ul class="exp-bullets">
+          <li>Built an automated Python pipeline to convert raw research files into analysis-ready datasets, reducing processing time from hours to seconds</li>
+          <li>Developed reusable entropy metric calculations applied across fields and participants for statistical modeling</li>
+          <li>Improved reproducibility and data quality for the graduate researcher's workflow end-to-end</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-org">Binghamton University</div>
+        <div class="exp-dates">Aug 2023 – Present</div>
+      </div>
+      <div>
+        <div class="exp-role">IT Help Desk Analyst</div>
+        <ul class="exp-bullets">
+          <li>Provided technical support to 100+ faculty, staff, and students; resolved 90% of issues on first contact</li>
+          <li>Diagnosed and repaired hardware/software issues on Mac and Windows systems</li>
+          <li>Used TeamDynamix ITSM to manage and document support tickets</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-org">Binghamton University</div>
+        <div class="exp-dates">Aug 2023 – Present</div>
+      </div>
+      <div>
+        <div class="exp-role">Undergraduate Research Assistant</div>
+        <ul class="exp-bullets">
+          <li>Designed novel studies on relational memory in healthy adults, including eye-tracking protocols</li>
+          <li>Analyzed behavioral and eye-tracking data in Excel; prepared visualizations for manuscript submission</li>
+          <li>Administered standardized neuropsychological tests and maintained participant protocols</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-org">Lavner Education</div>
+        <div class="exp-dates">Jun – Aug 2023</div>
+      </div>
+      <div>
+        <div class="exp-role">IT Intern</div>
+        <ul class="exp-bullets">
+          <li>Set up and maintained on-site hardware, software, and internet connectivity</li>
+          <li>Delivered educational instruction to 5–15 students per class in computing topics</li>
+          <li>Provided ongoing technical support to ensure a smooth learning environment</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">A Bit More</div>
+  <div class="section-title">About Me</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a data scientist and analyst finishing my MS in Data Analytics at Binghamton University (GPA 3.93), where I also completed my BA in Psychology with a minor in Digital and Data Studies.</p>
+      <p>My work spans machine learning (computer vision, NLP, audio classification), causal inference in healthcare, and interactive data visualization — I love turning messy datasets into clear, actionable insights.</p>
+      <p>Outside of data, I spent four years teaching and directing martial arts, studied abroad in Florence through a Gilman Scholarship, and serve as a study abroad ambassador helping students navigate international programs.</p>
+    </div>
+    <div class="about-facts">
+      <div class="fact-row">
+        <span class="fact-label">Education</span>
+        <span class="fact-value">MS Data Analytics · BA Psychology<br>Binghamton University</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Location</span>
+        <span class="fact-value">New York</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Languages</span>
+        <span class="fact-value">English · Mandarin (Fluent)</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Interests</span>
+        <span class="fact-value">Healthcare AI · Geospatial Analysis · Study Abroad · Martial Arts</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Graduating</span>
+        <span class="fact-value">June 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Let's Connect</div>
+  <div class="section-title">Get in Touch</div>
+  <p>Open to data science, analytics, and research roles — feel free to reach out.</p>
+  <div class="contact-links">
+    <a href="mailto:shuan137@binghamton.edu" class="contact-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      shuan137@binghamton.edu
+    </a>
+    <a href="tel:9176051555" class="contact-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.95-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (917) 605-1555
+    </a>
+    <a href="https://linkedin.com/in/sophia-huang-a7929b251" target="_blank" class="contact-link">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sophia Huang · Built with care
+</footer>
+
+<script>
+function filterProjects(tag, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.project-card').forEach(card => {
+    const tags = card.getAttribute('data-tags') || '';
+    if (tag === 'all' || tags.includes(tag)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
