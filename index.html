@@ -6,7 +6,6 @@
 <title>Sophia Huang — Data Scientist & Analyst</title>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
@@ -19,7 +18,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="Sophia Huang Resume.pdf" target="_blank" class="nav-resume">Resume</a>
+  <a href="Sophia_Huang_Resume_.pdf" target="_blank" class="nav-resume">Resume</a>
 </nav>
 
 <!-- HERO -->
@@ -57,9 +56,24 @@
     <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
     <button class="filter-btn" onclick="filterProjects('ml', this)">Machine Learning</button>
     <button class="filter-btn" onclick="filterProjects('analytics', this)">Analytics</button>
+    <button class="filter-btn" onclick="filterProjects('dev', this)">Development</button>
   </div>
 
   <div class="projects-grid" id="projects-grid">
+
+    <div class="project-card" data-tags="analytics">
+      <div class="card-top">
+        <div class="card-icon" style="background:#E8EDE8; font-size:22px;">🏦</div>
+        <span class="card-date">May – Jul 2026</span>
+      </div>
+      <div class="card-title">JPMorgan Chase: Planning vs. Actual Usage Analysis</div>
+      <div class="card-desc">Analyzed 127,000+ infrastructure cost records, building OLS regression models and diagnostic visualizations to quantify a systematic 4x overestimation in planned vs. actual spending across 672 applications. Automated reporting across 13 cost dimensions using pandas, openpyxl, and matplotlib.</div>
+      <div class="card-tags">
+        <span class="tag analytics">OLS Regression</span>
+        <span class="tag analytics">Cost Analysis</span>
+        <span class="tag analytics">Python</span>
+      </div>
+    </div>
 
     <div class="project-card" data-tags="ml">
       <div class="card-top">
@@ -67,16 +81,11 @@
         <span class="card-date">Jan – May 2026</span>
       </div>
       <div class="card-title">Campus Parking Availability Detection</div>
-      <div class="card-desc">Built a computer vision pipeline using YOLO to detect parking occupancy from lot images, achieving 90% precision and 93% recall on a 6,000+ image test set of 255,000+ labeled spaces, and mocked up a website
-        for predicting unoccupied parking spots on campus.</div>
+      <div class="card-desc">Built a computer vision pipeline using YOLO to detect parking occupancy from lot images, achieving 90% precision and 93% recall on a 6,000+ image test set of 255,000+ labeled spaces.</div>
       <div class="card-tags">
         <span class="tag ml">Computer Vision</span>
         <span class="tag ml">YOLO</span>
         <span class="tag dev">Figma</span>
-      </div>
-      <div class="card-links">
-        <a href="https://github.com/Sophia4827/campus_parking/tree/main" target="_blank" class="card-link">View Project →</a>
-        <a href="https://pitch-squad-47294237.figma.site" target="_blank" class="card-link">View Website →</a>
       </div>
     </div>
 
@@ -86,13 +95,12 @@
         <span class="card-date">Jan – May 2026</span>
       </div>
       <div class="card-title">UHS 30-Day Hospital Readmission Analysis</div>
-      <div class="card-desc">Analyzed 5,289 inpatient hospitalizations from Epic EHR data. Applied inverse probability weighting and logistic regression to evaluate care transition interventions.</div>
+      <div class="card-desc">Analyzed 5,289 inpatient hospitalizations from Epic EHR data. Applied inverse probability weighting and logistic regression to evaluate care transition interventions — finding TCM within 7 days reduced readmission by 7.8 percentage points.</div>
       <div class="card-tags">
         <span class="tag analytics">Causal Inference</span>
         <span class="tag ml">K-Modes</span>
         <span class="tag analytics">EHR Data</span>
       </div>
-      <a href="https://github.com/Sophia4827/uhs_readmission_analysis" target="_blank" class="card-link">View Project →</a>
     </div>
 
     <div class="project-card" data-tags="ml">
@@ -107,7 +115,6 @@
         <span class="tag ml">PyTorch</span>
         <span class="tag ml">fastai</span>
       </div>
-      <a href="https://github.com/Sophia4827/emergency_sound_analysis/tree/main" target="_blank" class="card-link">View Project →</a>
     </div>
 
     <div class="project-card" data-tags="analytics dev">
@@ -122,7 +129,6 @@
         <span class="tag analytics">Database Design</span>
         <span class="tag dev">Visio</span>
       </div>
-      <a href="https://github.com/Sophia4827/jetblue_delay/tree/main" target="_blank" class="card-link">View Project →</a>
     </div>
 
     <div class="project-card" data-tags="analytics">
@@ -134,10 +140,9 @@
       <div class="card-desc">Led a team analyzing 10,000+ IT service tickets for two school districts. Designed 7 Power BI interactive visualizations and diagnosed systemic inefficiencies including misrouted tickets and staffing gaps.</div>
       <div class="card-tags">
         <span class="tag analytics">Power BI</span>
-        <span class="tag analytics">IT Analytics</span>
-        <span class="tag analytics">Process Improvement</span>
+        <span class="tag analytics">Operations</span>
+        <span class="tag analytics">Team Lead</span>
       </div>
-      <a href="https://github.com/Sophia4827/boces_ticket_analysis/tree/main" target="_blank" class="card-link">View Project →</a>
     </div>
 
     <div class="project-card" data-tags="analytics dev">
@@ -151,10 +156,6 @@
         <span class="tag dev">Shiny</span>
         <span class="tag analytics">Geospatial</span>
         <span class="tag dev">R</span>
-      </div>
-      <div class="card-links">
-        <a href="https://github.com/Sophia4827/nyc_311_analysis" target="_blank" class="card-link">View Project →</a>
-        <a href="https://sophiahuang.shinyapps.io/Final_Project/" target="_blank" class="card-link">Live Demo →</a>
       </div>
     </div>
 
@@ -170,7 +171,6 @@
         <span class="tag ml">Transfer Learning</span>
         <span class="tag analytics">Healthcare AI</span>
       </div>
-      <a href="https://github.com/Sophia4827/bone_fracture_image_classification/tree/main" target="_blank" class="card-link">View Project →</a>
     </div>
 
     <div class="project-card" data-tags="analytics ml">
@@ -185,7 +185,6 @@
         <span class="tag ml">UMAP</span>
         <span class="tag analytics">Python</span>
       </div>
-      <a href="https://github.com/Sophia4827/energy_data_analysis/tree/main" target="_blank" class="card-link">View Project →</a>
     </div>
 
   </div>
@@ -204,8 +203,8 @@
         <span class="skill-pill">Python</span>
         <span class="skill-pill">R</span>
         <span class="skill-pill">SQL</span>
-        <span class="skill-pill">Linux</span>
-        <span class="skill-pill">Bash</span>
+        <span class="skill-pill">Shell Scripting</span>
+        <span class="skill-pill">MongoDB</span>
       </div>
     </div>
     <div class="skill-group">
@@ -255,7 +254,7 @@
     <div class="exp-item">
       <div class="exp-meta">
         <div class="exp-org">Binghamton University</div>
-        <div class="exp-dates">Oct 2025 – May 2026</div>
+        <div class="exp-dates">Oct 2025 – Present</div>
       </div>
       <div>
         <div class="exp-role">Research Data Scientist</div>
@@ -270,7 +269,7 @@
     <div class="exp-item">
       <div class="exp-meta">
         <div class="exp-org">Binghamton University</div>
-        <div class="exp-dates">Aug 2023 – May 2026</div>
+        <div class="exp-dates">Aug 2023 – Present</div>
       </div>
       <div>
         <div class="exp-role">IT Help Desk Analyst</div>
@@ -285,7 +284,7 @@
     <div class="exp-item">
       <div class="exp-meta">
         <div class="exp-org">Binghamton University</div>
-        <div class="exp-dates">Aug 2023 – May 2025</div>
+        <div class="exp-dates">Aug 2023 – Present</div>
       </div>
       <div>
         <div class="exp-role">Undergraduate Research Assistant</div>
@@ -324,10 +323,8 @@
   <div class="about-grid">
     <div class="about-text">
       <p>I'm a data scientist and analyst finishing my MS in Data Analytics at Binghamton University (GPA 3.93), where I also completed my BA in Psychology with a minor in Digital and Data Studies.</p>
-      <p>My work spans machine learning, statistical modeling, and data visualization, from building computer vision pipelines and audio classifiers to causal inference in healthcare analytics. Data is everywhere around us, but its
-         real value comes from the quality of how it's collected, cleaned, and interpreted. I'm passionate about not just finding patterns in messy, real-world data, but transforming it into clear, actionable insights that can drive
-          better decisions for teams, organizations, and the people they serve. </p>
-      <p>Outside of data, I spent four years teaching and directing martial arts, studied abroad in Florence through a Gilman Scholarship, and speak fluent Mandarin. I also enjoy photography, traveling, rock climbing, snowboarding, and boxing.</p>
+      <p>My work spans machine learning (computer vision, NLP, audio classification), causal inference in healthcare, and interactive data visualization — I love turning messy datasets into clear, actionable insights.</p>
+      <p>Outside of data, I spent four years teaching and directing martial arts, studied abroad in Florence through a Gilman Scholarship, and serve as a study abroad ambassador helping students navigate international programs.</p>
     </div>
     <div class="about-facts">
       <div class="fact-row">
@@ -344,7 +341,7 @@
       </div>
       <div class="fact-row">
         <span class="fact-label">Interests</span>
-        <span class="fact-value">Healthcare AI · Data Storytelling · Study Abroad · Martial Arts</span>
+        <span class="fact-value">Healthcare AI · Geospatial Analysis · Study Abroad · Martial Arts</span>
       </div>
       <div class="fact-row">
         <span class="fact-label">Graduating</span>
@@ -362,7 +359,7 @@
   <div class="contact-links">
     <a href="mailto:shuang4827@gmail.com" class="contact-link">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-      shuang4827@gmail.com
+      shuan137@binghamton.edu
     </a>
     <a href="tel:9176051555" class="contact-link">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.95-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -371,10 +368,6 @@
     <a href="https://www.linkedin.com/in/sophia-huang03/" target="_blank" class="contact-link">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
       LinkedIn
-    </a>
-    <a href="https://github.com/Sophia4827" target="_blank" class="contact-link">
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      GitHub
     </a>
   </div>
 </section>
